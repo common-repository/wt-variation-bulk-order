@@ -1,0 +1,649 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+/*======================================
+ Public Accrodian Css
+========================================*/
+
+
+.wt-order-list li h3 {
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+}
+.wt-order-list li .wt-order-header > span {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+}
+.wt-order-list li .wt-order-header:not(.off_table) h3:after {
+    content: "\f107";
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    transform: translateY(-50%);
+}
+body .wt-order-list .wt-order-header:not(.off_table).active h3:after {
+    content: "\f106";
+}
+.wt-order-list li .wt-order-table-wrap {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    cursor: pointer;
+    padding: 0 15px 15px;
+}
+
+/*==========================================================
+                    Start Amount Table Css
+============================================================*/
+
+
+.wt-quick-order-main-wrap .variations_form .variations {
+    border: 0;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+    margin-bottom: 1em;
+    width: 100%
+}
+.wt-quick-order-main-wrap .variations_form .variations td,
+.wt-quick-order-main-wrap .variations_form .variations th {
+    border: 0;
+    vertical-align: top;
+    line-height: 2em;
+    padding: 0;
+    display: block
+}
+.wt-quick-order-main-wrap .variations_form .variations tr {
+    margin-bottom: .5em
+}
+.wt-quick-order-main-wrap .variations_form .variations th {
+    margin-bottom: .5em;
+    padding-left: 0
+}
+.wt-quick-order-main-wrap .variations_form .variations label {
+    font-weight: 700
+}
+.wt-quick-order-main-wrap .variations_form .variations select {
+    max-width: 100%;
+    min-width: 75%;
+    display: inline-block;
+    width: 100%
+}
+.wt-quick-order-main-wrap .variations_form .variations td.label {
+    vertical-align: middle;
+    margin-top: 8px;
+    margin-bottom: 1px
+}
+.wt-quick-order-main-wrap select#price-per-box {
+    padding: 0.8em;
+    line-height: normal;
+    padding-right: 2em;
+    appearance: none;
+    background-position: 98% 50%;
+    background-color: #fff;
+    border-color: var(--ast-border-color);
+    border-radius: 3px;
+    box-shadow: none;
+    width: 100%;
+}
+.wt-quick-order-main-wrap select#price-per-box:focus,
+.wt-quick-order-main-wrap .quantity .qty:focus {
+    outline: none;
+}
+
+.wt-quick-order-main-wrap .reset_variations {
+    visibility: hidden;
+    font-size: .83em;
+    position: static;
+    display: inline-block;
+    color: inherit;
+    opacity: .6;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
+.wt-quick-order-main-wrap .single_variation_wrap .single_variation {
+    margin-bottom: 1.2em;
+    padding-top: 0;
+    border-top: 0;
+}
+.wt-quick-order-main-wrap .single_variation_wrap p {
+    margin-bottom: 1em;
+}
+
+.wt-quick-order-main-wrap .woocommerce-variation-price span.price {
+    color: #77a464;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.2em;
+}
+
+.wt-quick-order-main-wrap .woocommerce-variation-price span.price del {
+    opacity: .5;
+    font-weight: 400;
+    display: initial;
+}
+
+
+.wt-quick-order-main-wrap .woocommerce-variation-price p.price,
+.wt-quick-order-main-wrap .woocommerce-variation-price span.price {
+    color: #4b4f58;
+}
+.single_variation_wrap .stock {
+    color: #77a464;
+}
+.wt-quick-order-main-wrap .woocommerce-variation-availability p.ast-stock-detail .ast-stock-avail {
+    font-weight: 700;
+}
+
+.wt-quick-order-main-wrap .button.single_add_to_cart_button {
+    padding: 10px 20px !important;
+    vertical-align: middle;
+    float: left;
+    width: auto;
+    margin-bottom: 1em;
+    line-height: 1;
+    font-weight: 700;
+    display: inline-block;
+}
+.wt-quick-order-main-wrap .button.single_add_to_cart_button:hover {
+    color: #fff !important;
+}
+.wt-quick-order-main-wrap .single_add_to_cart_button.disabled  {
+    cursor: not-allowed;
+    opacity: .5;
+}
+.wt-quick-order-main-wrap .quantity.buttons_added {
+    display: flex;
+    margin: 0 1em 1em 0;
+}
+.wt-quick-order-main-wrap .quantity.buttons_added .minus,
+.wt-quick-order-main-wrap .quantity.buttons_added .plus {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #dddddd;
+    color: #4b4f58;
+    align-items: center;
+    outline: 0;
+    font-weight: 400;
+}
+.wt-quick-order-main-wrap .quantity input::-webkit-outer-spin-button,
+.wt-quick-order-main-wrap .quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.wt-quick-order-main-wrap .quantity input[type=number] {
+  -moz-appearance: textfield;
+}
+.wt-quick-order-main-wrap .quantity .qty {
+    width: 3.631em;
+    height: 38px !important;
+    padding: 0.3em;
+    text-align: center;
+    background: transparent;
+}
+.wt-quick-order-main-wrap .quantity .qty:hover {
+    border-color: #dddddd;
+}
+.wt-quick-order-main-wrap .quantity .minus {
+    border-right-width: 0 !important;
+}
+.wt-quick-order-main-wrap .quantity .plus {
+    border-left-width: 0 !important;
+}
+
+.wt-order-list .wt-quick-variations-form {
+    margin: 0;
+}
+.wt-order-list .wt-quick-variations-form .wt-quick-order-table {
+  overflow: auto;
+  margin: 0;
+  display: block;
+}
+
+.wt-quick-order-table {
+    border-collapse: collapse;
+    margin: 0;
+    border-spacing: 0;
+    width: 100%;
+}
+.wt-quick-order-table .quantity.buttons_added {
+    margin: 0;
+}
+.wt-order-list table.wt-quick-order-table thead th:nth-child(1){
+    border-radius: 5px 0 0;
+    text-align: left;
+}
+.wt-order-list table.wt-quick-order-table thead th:last-child{
+    border-radius: 0 5px 0 0;
+}
+.wt-order-list table.wt-quick-order-table thead th {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.wt-order-list li .wt-quick-order-cart .wt-quick-add-cart {
+    font-size: 15px;
+    padding: 10px 30px;
+    text-align: center;
+    transform: none;
+    color: #000;
+    text-transform: uppercase;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;   
+    line-height: 20px;
+    font-weight: 600;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.wt-quick-order-table  tfoot tr.wt-subtotals  td{ 
+    color: #fff !important;
+    background: #9db2bf;
+    padding: 12px 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.wt-quick-order-table tfoot tr.wt-subtotals td:nth-child(1){
+    border-radius: 0px 0 0 5px;
+}
+.wt-quick-order-table tfoot tr.wt-subtotals td:last-child{
+    border-radius: 0 0px 5px 0;
+}
+.wt-quick-order-table tfoot tr.wt-subtotals td.wt-order-total-qty,
+.wt-quick-order-table tfoot tr.wt-subtotals td.wt-order-tolal-price{
+    text-align: center;
+}
+.wt-order-list li .wt-order-header {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.wt-order-list li .wt-order-header .wt-order-image img{
+    width: 50px;
+    margin-right: 15px;
+}
+.wt-order-list table.wt-quick-order-table th {
+    background-color: #9db2bf;
+    color: #ffffff!important;
+}
+.wt-order-list table.wt-quick-order-table th,
+.wt-order-list table.wt-quick-order-table td {
+    padding: 15px 15px;
+    color: #777777;
+    font-size: 15px;
+    line-height: normal;
+}
+.wt-order-list table.wt-quick-order-table th{
+    padding: 15px 15px;
+}
+.wt-order-list table.wt-quick-order-table td {
+    font-weight: 500;
+    vertical-align: middle;
+    background-color: #fff;
+}
+.wt-order-list table.wt-quick-order-table td.wt-order-priec,
+.wt-order-list table.wt-quick-order-table td.wt-order-subtotal{
+    color: #000000;
+    font-weight: 600;
+}
+.wt-order-list table td.wt-order-quantity .quantity input {
+    max-height: 30px;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+    min-width: 45px;
+    line-height: normal;
+}
+.wt-order-list table td.wt-order-quantity .quantity input::placeholder {
+    color: #333;
+}
+.wt-order-list table td.wt-order-quantity .quantity input:focus {
+    outline: none;
+}
+
+.wt-order-list li .wt-quick-order-cart .wt-quick-add-cart:focus {
+    outline: 0;
+}
+
+.wt-not-stock-data {
+    color: #D80C0C !important;
+}
+.wt-loader {
+    border: 2px dotted #FFF;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    animation: spin 2s linear infinite;
+    display: none;
+}
+
+/* Safari browser */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.wt-quick-add-cart.wt-active .wt-loader {
+    display: inline-block;
+}
+
+/*error-noties-css*/
+
+.wt-quick-order-main-wrap span.wt-error.wt-qty-error,
+.wt-quick-order-main-wrap .wt-error .woocommerce-error {
+    padding: 10px 15px;
+    display: block;
+    margin-bottom: 15px;
+    background: rgba(255, 78, 78, 0.16);
+    color: #D80C0C;
+    border-left: 0;
+    border-radius: 4px;
+    border-top: 3px solid #D80C0C;
+}
+
+.wt-quick-order-main-wrap .wt-error .woocommerce-error li {
+    line-height: normal;
+    padding-right: 90px;
+    font-weight: 500;
+}
+.wt-quick-order-main-wrap span.wt-error.wt-qty-error {
+    line-height: normal;
+    font-weight: 500;
+}
+.wt-quick-order-main-wrap .wt-error .woocommerce-error li a.button {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #EDBD27;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 10px;
+    margin-right: -90px;
+}
+.wt-quick-order-main-wrap .wt-error .woocommerce-error li a.button:hover {
+    color: #6c6c6c;
+    background-color: #fff;
+}
+.wt-quick-order-main-wrap .wt-error .woocommerce-error li a {
+    font-weight: 600;
+    color: #D80C0C;
+}
+.wt-quick-order-main-wrap .wt-error .woocommerce-error::before {
+    display: none;
+}
+
+/*succes-noties-css*/
+
+.wt-quick-order-main-wrap .wt-success {
+    padding: 10px 15px;
+    display: block;
+    margin-bottom: 15px;
+    background: #28a74526;
+    color: #28a745;
+    border-left: 0;
+    border-radius: 4px;
+    border-top: 3px solid #28a745;
+    font-weight: 500;
+}
+
+/*==========================================================
+                    End Amount Table Css
+============================================================*/
+
+
+/*=======================================
+        Start single_product Table Css
+==========================================*/
+
+.wt-quick-order-wrap ul.wt-order-list {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 15px auto;
+    cursor: pointer;
+    border: 1px solid #dde6ed;
+    background: #f8fafb;
+    border-radius: 6px;
+}
+.wt-quick-order-wrap ul.wt-order-list li {
+    margin: 0;
+    line-height: normal;
+}
+.wt-quick-order-wrap .wt-order-list table.wt-quick-order-table tr{
+    border-bottom: 1px solid #efefef;
+}
+.wt-quick-order-wrap .wt-order-list table.wt-quick-order-table,
+.wt-quick-order-wrap .wt-order-list table.wt-quick-order-table td,
+.wt-quick-order-wrap .wt-order-list table.wt-quick-order-table th {
+    border: 0;
+    word-break: normal;
+    text-align: left;
+}
+.wt-quick-order-wrap .wt-order-list table.wt-quick-order-table tfoot tr {
+    border-bottom: 0;
+}
+.wt-quick-order-wrap .wt-order-list table.wt-quick-order-table tr:nth-child(2n) td{
+    background-color: #f9f9f9;
+}
+.wt-order-list .wt-quick-variations-form .wt-quick-order-table::-webkit-scrollbar-track
+{
+    border-radius: 15px;
+    background-color: #f0f0f0;
+}
+
+.wt-order-list .wt-quick-variations-form .wt-quick-order-table::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+
+.wt-order-list .wt-quick-variations-form .wt-quick-order-table::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: #dadada;
+}
+.wt-order-list .wt-quick-variations-form .wt-quick-order-cart {
+    margin-top: 15px;
+}
+.wt-order-list .wt-quick-variations-form .wt-quick-order-cart a.wt-quick-add-cart {
+    background: #9db2bf;
+    color: #fff;
+    padding: 12px 30px;
+    margin: auto;
+    text-decoration: none;
+}
+.wt-order-list .wt-quick-variations-form .wt-quick-order-cart a.wt-quick-add-cart:hover {
+   background: #dde6ed;
+   color: #000;
+}
+.wt-order-list table.wt-quick-order-table td .wt-order-quantity-wrap {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dde6ed;
+    border-radius: 5px;
+    padding: 3px;
+}
+.wt-order-list table.wt-quick-order-table td .wt-order-quantity-wrap a{
+    color: #000;
+    background: #dde6ed;
+    line-height: normal;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 0;
+    border: 0;
+    flex-shrink: 0;
+    text-decoration: none;
+    font-weight: 700;
+}
+.wt-order-list table.wt-quick-order-table td .wt-order-quantity-wrap a:hover {
+ background: #9db2bf;
+ color: #fff;
+}
+.wt-order-list table.wt-quick-order-table td .wt-order-quantity-wrap a:focus{
+    outline: none;
+}
+.wt-order-list table.wt-quick-order-table td.wt-order-subtotal,
+.wt-order-list table.wt-quick-order-table td.wt-order-priec{
+    text-align: center;
+}
+/*=======================================
+       End single_product Table Css
+======================================*/
+
+@media only screen and (max-width: 767px) {
+    .wt-quick-order-wrap .wt-order-list table.wt-quick-order-table {
+        max-height: 100% !important;
+    }
+    .wt-order-list table.wt-quick-order-table {
+        border: 0;
+    }
+    .wt-order-list table.wt-quick-order-table, 
+    .wt-order-list table.wt-quick-order-table thead, 
+    .wt-order-list table.wt-quick-order-table tbody, 
+    .wt-order-list table.wt-quick-order-table tfoot,
+    .wt-order-list table.wt-quick-order-table th, 
+    .wt-order-list table.wt-quick-order-table td, 
+    .wt-order-list table.wt-quick-order-table tr { 
+        display: block; 
+    }
+    .wt-order-list table.wt-quick-order-table thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .wt-order-list table.wt-quick-order-table tr {
+        border-width: 2px !important;
+        padding: 5px 0;
+    }
+    .wt-quick-order-wrap .wt-order-list table.wt-quick-order-table tfoot tr { 
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+    .wt-order-list table.wt-quick-order-table td { 
+        border: none;
+        border-bottom: 1px solid #f4f4f8;
+        position: relative;
+        white-space: inherit;
+        padding: 5px 10px;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        background: transparent;
+
+    }
+    .wt-order-list table.wt-quick-order-table td:before { 
+        padding-right: 10px;
+        white-space: nowrap;
+        color: #000;
+        font-weight: bold;
+        width: 35%;
+        text-align: left;
+        display: inline-block;
+        font-size: 15px;
+    }
+    .wt-order-list table.wt-quick-order-table td:before {
+        content: attr(data-title);
+    }
+    .wt-order-list table.wt-quick-order-table td:last-child {
+        border: 0;
+    }
+    .wt-quick-order-table tfoot tr.wt-subtotals td{
+        text-align: end;
+    }
+    .wt-order-list table.wt-quick-order-table td.wt-order-subtotal, .wt-order-list table.wt-quick-order-table td.wt-order-priec{
+        text-align: left;
+    }
+    .wt-order-list table.wt-quick-order-table td .wt-order-quantity-wrap{
+        max-width: 120px;
+    }
+    .wt-quick-order-wrap .wt-order-list table.wt-quick-order-table tr:nth-child(2n) td {
+        background-color: transparent;
+    }
+    .wt-order-list .wt-quick-variations-form .wt-quick-order-cart {
+        margin-top: 0; 
+    }
+    .wt-quick-order-table tfoot tr.wt-subtotals td:nth-child(1),
+    .wt-quick-order-table tfoot tr.wt-subtotals td:last-child{
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .wt-order-list li .wt-quick-order-cart .wt-quick-add-cart {
+        font-size: 14px;
+        padding: 8px 22px;
+    }
+    .wt-order-list .wt-quick-variations-form {
+        margin-bottom: 0;      
+    }
+    .wt-order-list li .wt-order-table-wrap{
+        padding: 0 0px 15px;
+    }
+    .wt-quick-order-wrap .wt-order-list table.wt-quick-order-table tfoot tr { 
+        padding-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .wt-order-list li .wt-order-header {
+        padding: 16px 20px;
+    }
+    .wt-order-list li h3 {
+        font-size: 15px;
+    }
+    .wt-order-list .wt-quick-variations-form {
+        overflow: auto;
+    }
+
+}
+
